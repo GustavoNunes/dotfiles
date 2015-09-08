@@ -1,5 +1,5 @@
 ; list the packages you want
-(setq package-list '(sr-speedbar php-mode web-mode markdown-mode magit))
+(setq package-list '(php-mode web-mode markdown-mode magit))
 
 ; list the repositories containing them
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")))
