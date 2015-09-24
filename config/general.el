@@ -25,4 +25,6 @@
     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
 ;; enable flycheck (syntax checking)
-(add-hook 'php-mode-hook (lambda () (flycheck-mode t)))
+(add-hook 'php-mode-hook (lambda ()
+			   (flycheck-mode t)
+			   (auto-complete-mode t)))
