@@ -6,4 +6,6 @@ ido.last
 tramp
 ac-comphist.dat
 geben
+.emacs.desktop*
+recentf
 *~

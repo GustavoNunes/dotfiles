@@ -4,9 +4,6 @@
 ;; disable beep sounds
 (setq visible-bell 1)
 
-;; show line numbers
-(global-linum-mode 1)
-
 ;; activate IDO
 (ido-mode 1)
 
@@ -24,7 +21,6 @@
                (file-writable-p buffer-file-name))
     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
-;; enable flycheck (syntax checking)
-(add-hook 'php-mode-hook (lambda ()
-			   (flycheck-mode t)
-			   (auto-complete-mode t)))
+;; column limit configuration
+(setq fci-rule-column 80)
+(setq fci-rule-color "grey30")
