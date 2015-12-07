@@ -19,6 +19,7 @@ Right now I'm loading the config files manually, one-by-one. I need to learn to 
 
 ### <a name="general-config"></a> General configuration
 * Maximize Emacs on startup.
+* Hide Tool-bar
 * Disable beep sounds.
 * Activate IDO mode.
 * Hide splash screen and message.
