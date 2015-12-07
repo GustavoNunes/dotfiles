@@ -1,6 +1,3 @@
-;; save Emacs state between sessions
-(desktop-save-mode 1)
-
 ;; save recent files
 (recentf-mode 1)
 
