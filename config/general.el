@@ -1,6 +1,9 @@
 ;; start maximized
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 
+;; disable tool-bar
+(tool-bar-mode -1)
+
 ;; disable beep sounds
 (setq visible-bell 1)
 
