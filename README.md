@@ -26,6 +26,7 @@ Right now I'm loading the config files manually, one-by-one. I need to learn to 
 * Switch windows with ALT + cursor keys.
 * Open protected files with sudo password prompt.
 * 80-column delimiter configuration.
+* Magit installed with <F2> shortcut
 
 ### <a name="php-config"></a> PHP configuration
 * Debugger (GEBEN).

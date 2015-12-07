@@ -1,8 +1,9 @@
 ;; start maximized
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 
-;; disable tool-bar
+;; disable tool-bar and menu
 (tool-bar-mode -1)
+(menu-bar-mode -1)
 
 ;; disable beep sounds
 (setq visible-bell 1)
@@ -27,3 +28,6 @@
 ;; column limit configuration
 (setq fci-rule-column 80)
 (setq fci-rule-color "grey30")
+
+;; magit-status shortcut
+(global-set-key (kbd "<f2>") 'magit-status)
