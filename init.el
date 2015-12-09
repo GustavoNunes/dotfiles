@@ -4,3 +4,4 @@
 (load "~/.emacs.d/config/session")
 
 (load-theme 'wombat)
+(load "~/.emacs.d/config/shortcuts")
