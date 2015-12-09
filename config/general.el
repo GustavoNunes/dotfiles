@@ -29,3 +29,8 @@
 (setq fci-rule-column 80)
 (setq fci-rule-color "grey30")
 
+;; shortening confirmation response
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; line numbers spacing
+(setq linum-format "%4d  ")
