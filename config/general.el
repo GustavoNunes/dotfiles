@@ -34,3 +34,7 @@
 
 ;; line numbers spacing
 (setq linum-format "%4d  ")
+
+;; disable backup files
+(setq make-backup-files nil)
+
