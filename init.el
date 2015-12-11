@@ -3,4 +3,5 @@
 (load "~/.emacs.d/config/php")
 (load "~/.emacs.d/config/session")
 (load "~/.emacs.d/config/shortcuts")
+(load "~/.emacs.d/config/display")
 (load "~/.emacs.d/config/scheme")

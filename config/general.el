@@ -1,10 +1,3 @@
-;; start maximized
-(setq initial-frame-alist (quote ((fullscreen . maximized))))
-
-;; disable tool-bar and menu
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-
 ;; disable beep sounds
 (setq visible-bell 1)
 
@@ -31,9 +24,6 @@
 
 ;; shortening confirmation response
 (defalias 'yes-or-no-p 'y-or-n-p)
-
-;; line numbers spacing
-(setq linum-format "%4d  ")
 
 ;; disable backup files
 (setq make-backup-files nil)
