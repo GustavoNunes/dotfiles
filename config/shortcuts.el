@@ -7,6 +7,8 @@
 
 (global-set-key (kbd "C-<f5>") 'ido-kill-buffer)
 
+(global-set-key (kbd "C-x t w") 'doremi-window-height+)
+
 (add-hook 'scheme-interaction-mode-hook
 	  (lambda () (local-set-key (kbd "<f9>") 'xscheme-send-previous-expression)))
 
