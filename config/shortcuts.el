@@ -12,4 +12,9 @@
 (add-hook 'scheme-interaction-mode-hook
 	  (lambda () (local-set-key (kbd "<f9>") 'xscheme-send-previous-expression)))
 
+(add-hook 'php-mode-hook
+	  (lambda()
+	    (local-set-key (kbd "<f1>") 'my-php-quick-lookup)
+	    (local-set-key (kbd "C-<f1>") 'my-php-browser-lookup)))
+
 
