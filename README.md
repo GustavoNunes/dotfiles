@@ -42,7 +42,6 @@ My configuration assumes the use of Emacs in terminal (tty).
 
 ### <a name="php-config"></a> PHP configuration
 * Debugger (GEBEN).
-* Syntax checking (Flycheck).
 * Auto-completion.
 * 80-column delimiter.
 * Show line numbers.
