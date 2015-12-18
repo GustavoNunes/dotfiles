@@ -15,6 +15,7 @@
 (add-hook 'php-mode-hook
 	  (lambda()
 	    (local-set-key (kbd "<f1>") 'my-php-quick-lookup)
-	    (local-set-key (kbd "C-<f1>") 'my-php-browser-lookup)))
+	    (local-set-key (kbd "C-<f1>") 'my-php-browser-lookup)
+	    (local-set-key (kbd "<f9>") 'my-run-phpunit)))
 
 

@@ -44,3 +44,11 @@
 	    (message desc)
 	  (message "Could not extract function info. Press C-F1 to go the description."))))
         (kill-buffer buf)))
+
+(defun my-run-phpunit ()
+  (interactive)
+  (with-output-to-temp-buffer "*phpUnit*"
+    (shell-command "../vendor/bin/phpunit ."
+		   "*phpUnit*"
+		   "*phpUnit*")
+    (pop-to-buffer "*phpUnit*")))
