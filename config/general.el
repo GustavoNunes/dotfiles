@@ -19,8 +19,10 @@
     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
 ;; column limit configuration
-(setq fci-rule-column 80)
-(setq fci-rule-color "grey30")
+(defun my-activate-fci ()
+  (fci-mode t)
+  (setq fci-rule-column 80)
+  (setq fci-rule-color "grey50"))
 
 ;; shortening confirmation response
 (defalias 'yes-or-no-p 'y-or-n-p)

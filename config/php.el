@@ -1,7 +1,7 @@
 ;; php-mode configuration
 (add-hook 'php-mode-hook (lambda ()
 			   (auto-complete-mode t)
-			   (fci-mode t) ;; column limit
+			   (my-activate-fci)
 			   (linum-mode t)
 			   (php-eldoc-enable))) ;; line numbers
 
