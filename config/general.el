@@ -30,3 +30,6 @@
 ;; disable backup files
 (setq make-backup-files nil)
 
+;; dired hide details
+(add-hook 'dired-mode-hook (lambda()
+			     (dired-hide-details-mode t)))
