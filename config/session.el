@@ -1,5 +1,7 @@
 ;; save recent files
 (recentf-mode 1)
+(setq recentf-max-menu-items 250)
+(run-at-time nil (* 5 60) 'recentf-save-list)
 
 ;; open recent files list with IDO
 (defun recentf-ido-find-file ()
