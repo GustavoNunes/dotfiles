@@ -1,8 +1,4 @@
-;; start maximized
-(setq initial-frame-alist (quote ((fullscreen . maximized))))
-
-;; disable tool-bar and menu
-(tool-bar-mode -1)
+;; disable menu
 (menu-bar-mode -1)
 
 ;; set color theme

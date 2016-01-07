@@ -1,7 +1,6 @@
 # My Emacs Configuration File
 
 * [Introduction](#introduction)
-* [File loading](#file-loading)
 * [Usage](#usage)
 * [Configuration details](#config-details)
 * [Todo](#todo)
@@ -9,11 +8,8 @@
 ## <a name="introduction"></a> Introduction
 I set up this repository to maintain my Emacs configuration stored and easily replicable.
 
-## <a name="file-loading"></a> File loading
-Right now I'm loading the config files manually, one-by-one. I need to learn to include all files in a given directory.
-
 ## <a name="usage"></a> Usage
-My configuration assumes the use of Emacs in terminal (tty).
+My configuration assumes the use of Emacs in xterm (emacs -nw).
 
 ## <a name="config-details"></a> Configuration details
 
@@ -25,10 +21,9 @@ My configuration assumes the use of Emacs in terminal (tty).
 * Open protected files with sudo password prompt.
 * 80-column delimiter configuration.
 * Disable backup files
+* Disable line-wrapping by default.
 
 ### <a name="display-config"></a> Display configuration
-* Maximize Emacs on startup.
-* Hide Tool-bar
 * Load Zenburn theme
 
 ### <a name="shortcuts-config"></a> Shortcuts configuration
@@ -50,5 +45,6 @@ My configuration assumes the use of Emacs in terminal (tty).
 ## <a name="todo"></a> Todo ##
 - Fix and learn/use org-mode.
 - New shortcut for opening buffer in new frame.
-- install Smex
-- use CUA mode (or similar)
+- Install Smex
+- Use CUA mode (or similar)
+- Learn to include all files in a given directory.
