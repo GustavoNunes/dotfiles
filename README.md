@@ -27,14 +27,37 @@ My configuration assumes the use of Emacs in xterm (emacs -nw).
 * Load Zenburn theme
 
 ### <a name="shortcuts-config"></a> Shortcuts configuration
-* <F2> Magit
-* <F5> Load file
-* <F6> Load recent file
-* <F7> Switch buffer
-* <F8> Save buffer
-* C-<F5> Kill buffer
 
-* <F9> Scheme - run expression before cursor
+#### General
+
+*    <F2>  Magit
+
+*    <F5>  Load file
+*  C-<F5>  Load file and kill current buffer
+
+*    <F6>  Load recent file
+
+*    <F7>  Switch buffer
+*  C-<F7>  Kill buffer
+
+*    <F8>  Save buffer
+
+* C-x t w  Change window height/width
+
+#### php-mode
+
+*    <F1>  Show function definition in minibuffer
+*  C-<F1>  Open function definition in external browser
+
+*    <F9>  Run PHPUnit
+
+#### scheme-interaction-mode 
+
+*    <F9>  Run expression before cursor
+
+#### haskell-mode
+
+*    <F12> Open interactive buffer
 
 ### <a name="php-config"></a> PHP configuration
 * Debugger (GEBEN).

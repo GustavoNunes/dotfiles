@@ -5,7 +5,8 @@
 (global-set-key (kbd "<f7>") 'ido-switch-buffer)
 (global-set-key (kbd "<f8>") 'save-buffer)
 
-(global-set-key (kbd "C-<f5>") 'ido-kill-buffer)
+(global-set-key (kbd "C-<f5>") 'ido-find-alternate-file)
+(global-set-key (kbd "C-<f7>") 'ido-kill-buffer)
 
 (global-set-key (kbd "C-x t w") 'doremi-window-height+)
 
@@ -18,4 +19,6 @@
 	    (local-set-key (kbd "C-<f1>") 'my-php-browser-lookup)
 	    (local-set-key (kbd "<f9>") 'my-run-phpunit)))
 
-
+(add-hook 'haskell-mode-hook
+	  (lambda()
+	    (local-set-key (kbd "<f12>") 'haskell-interactive-bring)))
