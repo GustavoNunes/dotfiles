@@ -44,3 +44,6 @@
 (add-hook 'text-mode-hook (lambda ()
 			   (auto-complete-mode t)
 			   (fci-mode t))) ;; column limit
+
+;; disable line-wrap
+(set-default 'truncate-lines t)
