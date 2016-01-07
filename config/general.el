@@ -10,6 +10,12 @@
 
 ;; activate ALT-based window switching
 (windmove-default-keybindings 'meta)
+(add-hook 'markdown-mode-hook
+	  (lambda()
+	    (local-set-key (kbd "M-<left>")  'windmove-left)
+	    (local-set-key (kbd "M-<right>") 'windmove-right)
+	    (local-set-key (kbd "M-<up>")    'windmove-up)
+	    (local-set-key (kbd "M-<down>")  'windmove-down)))
 
 ;; open files with sudo
 (defadvice ido-find-file (after find-file-sudo activate)
