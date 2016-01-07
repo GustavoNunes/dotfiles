@@ -47,3 +47,6 @@
 
 ;; disable line-wrap
 (set-default 'truncate-lines t)
+
+;; Smex-key (M-x with Ido)
+(global-set-key (kbd "M-x") 'smex)

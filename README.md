@@ -68,6 +68,5 @@ My configuration assumes the use of Emacs in xterm (emacs -nw).
 ## <a name="todo"></a> Todo ##
 - Fix and learn/use org-mode.
 - New shortcut for opening buffer in new frame.
-- Install Smex
 - Use CUA mode (or similar)
 - Learn to include all files in a given directory.
