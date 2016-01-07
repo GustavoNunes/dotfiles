@@ -2,7 +2,7 @@
 (setq package-list '(php-mode web-mode markdown-mode auto-complete let-alist
 			      geben fill-column-indicator magit zenburn-theme
 			      doremi doremi-cmd php-eldoc haskell-mode
-			      hide-comnt restclient git-timemachine))
+			      hide-comnt restclient git-timemachine dired+))
 
 ; list the repositories containing them
 (setq package-archives '(("ELPA" . "http://tromey.com/elpa/")

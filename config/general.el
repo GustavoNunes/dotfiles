@@ -36,6 +36,7 @@
 ;; disable backup files
 (setq make-backup-files nil)
 
-;; dired hide details
+;; dired configuration
 (add-hook 'dired-mode-hook (lambda()
-			     (dired-hide-details-mode t)))
+			     (dired-hide-details-mode t) ;; hide file details
+			     (diredp-toggle-find-file-reuse-dir 1))) ;; reuse buffer
