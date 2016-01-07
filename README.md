@@ -4,6 +4,7 @@
 * [File loading](#file-loading)
 * [Usage](#usage)
 * [Configuration details](#config-details)
+* [Todo](#todo)
 
 ## <a name="introduction"></a> Introduction
 I set up this repository to maintain my Emacs configuration stored and easily replicable.
@@ -45,3 +46,9 @@ My configuration assumes the use of Emacs in terminal (tty).
 * Auto-completion.
 * 80-column delimiter.
 * Show line numbers.
+
+## <a name="todo"></a> Todo ##
+- Fix and learn/use org-mode.
+- New shortcut for opening buffer in new frame.
+- install Smex
+- use CUA mode (or similar)
