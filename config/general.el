@@ -40,3 +40,7 @@
 (add-hook 'dired-mode-hook (lambda()
 			     (dired-hide-details-mode t) ;; hide file details
 			     (diredp-toggle-find-file-reuse-dir 1))) ;; reuse buffer
+
+(add-hook 'text-mode-hook (lambda ()
+			   (auto-complete-mode t)
+			   (fci-mode t))) ;; column limit
