@@ -6,3 +6,4 @@
 (load "~/.emacs.d/config/display")
 (load "~/.emacs.d/config/scheme")
 (load "~/.emacs.d/config/rss")
+(load "~/.emacs.d/config/web-browser")
