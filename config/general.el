@@ -4,6 +4,12 @@
 ;; activate IDO
 (ido-mode 1)
 
+;; activate CUA-mode
+(cua-mode 1)
+
+;; activate winner-mode
+(winner-mode 1)
+
 ;; hide splash screen and message
 (setq inhibit-startup-message t)
 (setq inhibit-startup-echo-area-message t)
