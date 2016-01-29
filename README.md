@@ -7,7 +7,8 @@
 * [Todo](#todo)
 
 ## <a name="introduction"></a> Introduction
-I set up this repository to maintain my Emacs configuration stored and easily replicable.
+I set up this repository to maintain my Emacs configuration stored and easily 
+replicable.
 
 ## <a name="usage"></a> Usage
 My configuration assumes the use of Emacs in xterm (emacs -nw).
@@ -22,6 +23,8 @@ My configuration assumes the use of Emacs in xterm (emacs -nw).
 ### <a name="general-config"></a> General configuration
 * Disable beep sounds.
 * Activate IDO mode.
+* CUA mode.
+* Winner mode.
 * Hide splash screen and message.
 * Switch windows with ALT + cursor keys.
 * Open protected files with sudo password prompt.
@@ -74,5 +77,5 @@ My configuration assumes the use of Emacs in xterm (emacs -nw).
 ## <a name="todo"></a> Todo ##
 - Fix and learn/use org-mode.
 - New shortcut for opening buffer in new frame.
-- Use CUA mode (or similar)
 - Learn to include all files in a given directory.
+- Find/create a mysql management plugin.

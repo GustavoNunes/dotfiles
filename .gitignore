@@ -8,4 +8,6 @@ ac-comphist.dat
 geben
 .emacs.desktop*
 recentf
+smex-items
+url
 *~
