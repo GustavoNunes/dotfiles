@@ -75,7 +75,6 @@ My configuration assumes the use of Emacs in xterm (emacs -nw).
 * Show line numbers.
 
 ## <a name="todo"></a> Todo ##
-- Fix and learn/use org-mode.
 - New shortcut for opening buffer in new frame.
 - Learn to include all files in a given directory.
 - Find/create a mysql management plugin.

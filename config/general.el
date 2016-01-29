@@ -56,3 +56,11 @@
 
 ;; Smex-key (M-x with Ido)
 (global-set-key (kbd "M-x") 'smex)
+
+;; Org-mode is conflicting with recentf
+;; It seems that recentf adds a hook using this var
+;; Org-mode tries to unset a value from this var
+;; But this var is from session.el which I'm not using
+;; So I need to declare it here.
+(unless (boundp 'session-globals-exclude)
+  (defvar session-globals-exclude ()))
