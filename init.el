@@ -8,5 +8,6 @@
 (load "~/.emacs.d/config/rss")
 (load "~/.emacs.d/config/web-browser")
 (load "~/.emacs.d/config/x-copy-paste")
+(load "~/.emacs.d/config/org-mode")
 (load "~/.emacs.d/config/jabber")
 (load "~/.emacs.d/config/windows")
