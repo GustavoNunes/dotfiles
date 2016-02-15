@@ -30,6 +30,12 @@
 (global-set-key (kbd "C-c o c") 'org-capture)
 (global-set-key (kbd "C-c o b") 'org-iswitchb)
 
+(add-hook 'markdown-mode-hook
+	  (lambda()
+	    (local-set-key (kbd "M-<left>")  'windmove-left)
+	    (local-set-key (kbd "M-<right>") 'windmove-right)
+	    (local-set-key (kbd "M-<up>")    'windmove-up)
+	    (local-set-key (kbd "M-<down>")  'windmove-down)))
 (add-hook 'org-mode-hook
 	  (lambda()
 	    (local-set-key (kbd "M-<left>")  'windmove-left)
