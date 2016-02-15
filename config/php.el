@@ -52,3 +52,8 @@
 		   "*phpUnit*"
 		   "*phpUnit*")
     (pop-to-buffer "*phpUnit*")))
+
+;; Fixed "case" statement indentation
+(add-hook 'php-mode-hook
+	  (lambda ()
+	    (c-set-offset 'case-label '+)))
