@@ -8,6 +8,8 @@
 (global-set-key (kbd "C-<f5>") 'ido-find-alternate-file)
 (global-set-key (kbd "C-<f7>") 'ido-kill-buffer)
 
+(global-set-key (kbd "S-<f5>") 'ido-find-file-other-window)
+
 (global-set-key (kbd "C-x t w") 'doremi-window-height+)
 
 (add-hook 'scheme-interaction-mode-hook
