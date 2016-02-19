@@ -58,3 +58,11 @@
 ;; So I need to declare it here.
 (unless (boundp 'session-globals-exclude)
   (defvar session-globals-exclude ()))
+
+(defun my-copy-file-to-aofl ()
+  (interactive)
+  (let* ((home-prefix "/home/gustavo/projects/2mundos/")
+	 (file-name (substring buffer-file-name (length home-prefix)))
+	 (origin (concat "~/projects/2mundos/" file-name))
+	 (destination (concat "$AOFL_HOST:" file-name)))
+    (shell-command (concat "scp -q" " " origin " " destination))))
