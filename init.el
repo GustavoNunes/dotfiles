@@ -29,8 +29,5 @@
 (setq config-directory "~/.emacs.d/config/")
 
 (dolist (config-file (directory-files config-directory))
-  (unless (or (string= "." config-file)
-	      (string= ".." config-file)
-	      (string= "#" config-file)
-	      (string= config-file "~"))
+  (unless (member config-file '("." ".." "#" "~"))
     (load (concat config-directory config-file))))

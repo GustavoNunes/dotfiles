@@ -4,10 +4,8 @@
 (global-set-key (kbd "<f6>") 'recentf-ido-find-file)
 (global-set-key (kbd "<f7>") 'ido-switch-buffer)
 (global-set-key (kbd "<f8>") 'save-buffer)
-
 (global-set-key (kbd "C-<f5>") 'ido-find-alternate-file)
 (global-set-key (kbd "C-<f7>") 'ido-kill-buffer)
-
 (global-set-key (kbd "S-<f5>") 'ido-find-file-other-window)
 
 (global-set-key (kbd "C-x t w") 'doremi-window-height+)
@@ -30,21 +28,17 @@
 (global-set-key (kbd "C-c o c") 'org-capture)
 (global-set-key (kbd "C-c o b") 'org-iswitchb)
 
-(add-hook 'markdown-mode-hook
-	  (lambda()
-	    (local-set-key (kbd "M-<left>")  'windmove-left)
-	    (local-set-key (kbd "M-<right>") 'windmove-right)
-	    (local-set-key (kbd "M-<up>")    'windmove-up)
-	    (local-set-key (kbd "M-<down>")  'windmove-down)))
 (add-hook 'org-mode-hook
 	  (lambda()
-	    (local-set-key (kbd "M-<left>")  'windmove-left)
-	    (local-set-key (kbd "M-<right>") 'windmove-right)
-	    (local-set-key (kbd "M-<up>")    'windmove-up)
-	    (local-set-key (kbd "M-<down>")  'windmove-down)))
-(add-hook 'org-agenda-mode-hook
-	  (lambda()
-	    (local-set-key (kbd "M-<left>")  'windmove-left)
-	    (local-set-key (kbd "M-<right>") 'windmove-right)
-	    (local-set-key (kbd "M-<up>")    'windmove-up)
-	    (local-set-key (kbd "M-<down>")  'windmove-down)))
+	    (local-set-key (kbd "S-<up>") 'org-metaup)
+	    (local-set-key (kbd "S-<down>") 'org-metadown)))
+
+(dolist (mode-hook '(markdown-mode-hook
+		     org-mode-hook
+		     org-agenda-mode-hook))
+  (add-hook mode-hook
+	    (lambda()
+	      (local-set-key (kbd "M-<left>")  'windmove-left)
+	      (local-set-key (kbd "M-<right>") 'windmove-right)
+	      (local-set-key (kbd "M-<up>")    'windmove-up)
+	      (local-set-key (kbd "M-<down>")  'windmove-down))))
