@@ -1,5 +1,5 @@
-;; disable beep sounds
-(setq visible-bell 1)
+;; disable beep sounds and flash alarm
+(setq ring-bell-function 'ignore)
 
 ;; activate IDO
 (ido-mode 1)
