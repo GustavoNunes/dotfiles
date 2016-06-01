@@ -81,3 +81,7 @@
 
 ;; avy configuration
 (setq avy-background t)
+
+;; enable which-key
+(which-key-mode t)
+(setq which-key-idle-delay 0.3)
