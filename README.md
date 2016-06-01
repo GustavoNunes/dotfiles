@@ -10,12 +10,7 @@
 I set up this repository to maintain my Emacs configuration stored and easily 
 replicable.
 
-## <a name="usage"></a> Usage
-My configuration assumes the use of Emacs in xterm (emacs -nw).
-
 ## <a name="Prerequisites"></a> Prerequisites
-* TERM env variable set to xterm-256color
-* xsel program, for copy-paste integration with X in terminal-mode
 * markdown program, to use markdown-mode live preview feature
 
 ## <a name="config-details"></a> Configuration details
@@ -73,8 +68,3 @@ My configuration assumes the use of Emacs in xterm (emacs -nw).
 * Auto-completion.
 * 80-column delimiter.
 * Show line numbers.
-
-## <a name="todo"></a> Todo ##
-- New shortcut for opening buffer in new frame.
-- Learn to include all files in a given directory.
-- Find/create a mysql management plugin.
