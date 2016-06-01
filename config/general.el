@@ -66,3 +66,15 @@
 	 (origin (concat "~/projects/2mundos/" file-name))
 	 (destination (concat "$AOFL_HOST:" file-name)))
     (shell-command (concat "scp -q" " " origin " " destination))))
+
+;; Set scroll margin
+(setq scroll-margin 10)
+
+;; join line to next line
+(global-set-key (kbd "C-j")
+		(lambda ()
+		  (interactive)
+		  (join-line -1)))
+
+;; wrap region
+(wrap-region-mode t)
