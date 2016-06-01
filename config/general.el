@@ -78,3 +78,6 @@
 
 ;; wrap region
 (wrap-region-mode t)
+
+;; avy configuration
+(setq avy-background t)

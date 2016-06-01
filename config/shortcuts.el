@@ -13,6 +13,8 @@
 
 (global-set-key (kbd "C-x t w") 'doremi-window-height+)
 
+(global-set-key (kbd "C-;") 'avy-goto-word-1)
+
 (add-hook 'scheme-interaction-mode-hook
 	  (lambda () (local-set-key (kbd "<f9>") 'xscheme-send-previous-expression)))
 
