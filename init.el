@@ -3,7 +3,7 @@
 			      geben fill-column-indicator magit zenburn-theme
 			      doremi doremi-cmd php-eldoc haskell-mode
 			      hide-comnt restclient git-timemachine dired+
-			      elfeed smex jabber wrap-region))
+			      smex wrap-region))
 
 ;; repositories
 (setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
