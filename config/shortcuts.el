@@ -1,5 +1,8 @@
 (global-set-key (kbd "<f2>") 'magit-status)
 
+(global-set-key (kbd "C-<f3>") 'dumb-jump-go)
+(global-set-key (kbd "C-<f4>") 'dumb-jump-back)
+
 (global-set-key (kbd "<f5>") 'ido-find-file)
 (global-set-key (kbd "<f6>") 'recentf-ido-find-file)
 (global-set-key (kbd "<f7>") 'ido-switch-buffer)
