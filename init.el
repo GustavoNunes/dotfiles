@@ -3,7 +3,7 @@
 			      geben fill-column-indicator magit zenburn-theme
 			      doremi doremi-cmd php-eldoc haskell-mode
 			      hide-comnt restclient git-timemachine dired+
-			      smex wrap-region dumb-jump avy which-key))
+			      smex wrap-region dumb-jump avy which-key helm))
 
 ;; repositories
 (setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
