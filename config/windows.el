@@ -1,6 +1,6 @@
 ;; change default window splitting behaviour
 (setq split-height-threshold nil)
-(setq split-width-threshold 80)
+(setq split-width-threshold 120)
 
 (defun window-toggle-split-direction ()
   "Switch window split from horizontally to vertically, or vice versa.
