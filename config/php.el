@@ -2,8 +2,7 @@
 (add-hook 'php-mode-hook (lambda ()
 			   (auto-complete-mode t)
 			   (my-activate-fci)
-			   (linum-mode t)
-			   (php-eldoc-enable))) ;; line numbers
+			   (php-eldoc-enable)))
 
 (defun my-php-browser-lookup ()
   (interactive)

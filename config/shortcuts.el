@@ -3,13 +3,17 @@
 (global-set-key (kbd "C-<f3>") 'dumb-jump-go)
 (global-set-key (kbd "C-<f4>") 'dumb-jump-back)
 
-(global-set-key (kbd "<f5>") 'ido-find-file)
-(global-set-key (kbd "<f6>") 'recentf-ido-find-file)
+(global-set-key (kbd "<f5>") 'helm-locate)
+(global-set-key (kbd "S-<f5>") 'my-open-file-as-root)
+
+(global-set-key (kbd "<f6>") 'helm-multi-files)
+(global-set-key (kbd "C-<f6>") 'ido-find-file)
+(global-set-key (kbd "S-<f6>") 'ido-find-file-other-window)
+
 (global-set-key (kbd "<f7>") 'ido-switch-buffer)
-(global-set-key (kbd "<f8>") 'save-buffer)
-(global-set-key (kbd "C-<f5>") 'ido-find-alternate-file)
 (global-set-key (kbd "C-<f7>") 'ido-kill-buffer)
-(global-set-key (kbd "S-<f5>") 'ido-find-file-other-window)
+
+(global-set-key (kbd "<f8>") 'save-buffer)
 
 (global-set-key (kbd "C-x t w") 'doremi-window-height+)
 

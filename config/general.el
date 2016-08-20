@@ -18,11 +18,11 @@
 (windmove-default-keybindings 'meta)
 
 ;; open files with sudo
-(defadvice ido-find-file (after find-file-sudo activate)
-  "Find file as root if necessary."
-  (unless (and buffer-file-name
-               (file-writable-p buffer-file-name))
-    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+(defun my-open-file-as-root ()
+  "Reopen the current buffer as root with tramp, if is not writable."
+  (interactive)
+  (unless (file-writable-p (buffer-file-name))
+    (find-alternate-file (concat "/sudo:root@localhost:" (buffer-file-name)))))
 
 ;; column limit configuration
 (defun my-activate-fci ()
@@ -85,3 +85,15 @@
 ;; enable which-key
 (which-key-mode t)
 (setq which-key-idle-delay 0.3)
+
+;; disable tabs
+(setq-default indent-tabs-mode nil)
+
+;; global line numbers
+(global-linum-mode)
+
+;; disable cursor blinking
+(blink-cursor-mode 0)
+
+;; activate dumb-jump globally
+(dumb-jump-mode t)
