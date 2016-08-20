@@ -22,3 +22,12 @@
       helm-ff-file-name-history-use-recentf t)
 
 (helm-mode 1)
+
+;; Replace spaces with .* in helm-locate
+(defun helm-icyrock-locate-pattern-transformer (pattern)
+  (replace-regexp-in-string " " ".*" pattern))
+
+(helm-attrset 'pattern-transformer 'helm-icyrock-locate-pattern-transformer helm-source-locate)
+
+;; Case insensitive helm-locate
+(setq helm-locate-case-fold-search t)
