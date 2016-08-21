@@ -5,7 +5,10 @@
 			      hide-comnt restclient git-timemachine dired+
 			      smex wrap-region dumb-jump avy which-key helm
 			      clojure-mode cider rainbow-delimiters
-			      clojure-mode-extra-font-locking))
+			      clojure-mode-extra-font-locking
+                              company ;; Used for auto completion
+                              company-flx ;; auto completion fuzzy matching
+                              ))
 
 ;; repositories
 (setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
