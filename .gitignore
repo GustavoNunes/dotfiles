@@ -13,3 +13,4 @@ url
 jabber-history
 cider-history
 *~
+etc/nixos/hardware-configuration.nix
