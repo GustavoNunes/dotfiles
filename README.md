@@ -1,4 +1,5 @@
 # My dotfiles
 
 ## Usage
-* Create a symbolic link to .emacs.d in $HOME.
+* Clone repo to $HOME/dotfiles.
+* Run "bash config.sh"
