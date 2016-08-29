@@ -1,0 +1,14 @@
+URxvt.font:     xft:bitstream vera sans mono:size=10:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=10:antialias=true
+URxvt.letterSpace: -1
+
+urxvt*foreground: #00FF00
+urxvt*background: #121212
+urxvt*cursorColor: #DDDDDD
+
+urxvt*scrollBar:false
+urxvt*internalBorder:0
+
+URxvt.transparent: true
+URxvt.shading: 10
+urxvt*fading: 15

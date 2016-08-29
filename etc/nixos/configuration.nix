@@ -20,19 +20,18 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Select internationalisation properties.
-  # i18n = {
-  #   consoleFont = "Lat2-Terminus16";
-  #   consoleKeyMap = "us";
-  #   defaultLocale = "en_US.UTF-8";
-  # };
-
+  i18n = {
+    consoleKeyMap = "us";
+    defaultLocale = "en_US.UTF-8";
+  };
+  
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    wget emacs firefox chromium git mkpasswd
+    wget emacs firefox chromium git mkpasswd i3status dmenu rxvt_unicode
   ];
 
   # List services that you want to enable:
@@ -52,11 +51,24 @@
   services.xserver.xkbVariant = "intl";
   services.xserver.xkbOptions = "ctrl:nocaps,lvl3:menu_switch";
 
-  # Enable the KDE Desktop Environment.
-  services.xserver.displayManager.kdm.enable = true;
-  services.xserver.desktopManager.kde4.enable = true;
+  # Display and window manager settings.
+
+  services.xserver.displayManager = {
+    sessionCommands = ''
+      ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "keycode 108 = Alt_R"
+      ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "add mod1 = Alt_R"
+    '';
+  };
+
+  services.xserver.windowManager = {
+    i3.enable = true;
+    default = "i3";
+  };
+
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+
+  security.sudo.wheelNeedsPassword = false;
   users.mutableUsers = false;
   users.extraUsers = {
     gustavo = {
