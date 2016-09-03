@@ -11,13 +11,11 @@
     ];
 
   # Use the GRUB 2 boot loader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.version = 2;
-  # Define on which hard drive you want to install Grub.
-  boot.loader.grub.device = "/dev/sda";
-
-  # networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  boot.loader.grub = {
+    enable = true;
+    version = 2;
+    device = "/dev/sda";
+  };
 
   # Select internationalisation properties.
   i18n = {
@@ -31,42 +29,40 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    wget emacs firefox chromium git mkpasswd i3status dmenu rxvt_unicode
+    # System and utility packages
+    wget mkpasswd
+
+    # X11 and display packages
+    i3status dmenu rxvt_unicode
+
+    # General use packages
+    emacs firefox chromium git
+
+    # Development packages
   ];
 
-  # List services that you want to enable:
+  services.xserver = {
+    enable = true;
 
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+    # Keyboard settings
+    layout = "us";
+    xkbModel = "pc105";
+    xkbVariant = "intl";
+    xkbOptions = "ctrl:nocaps,lvl3:menu_switch";
 
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
+    # Display and window manager settings.
+    displayManager = {
+      sessionCommands = ''
+        ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "keycode 108 = Alt_R"
+        ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "add mod1 = Alt_R"
+      '';
+    };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Keyboard settings
-  services.xserver.layout = "us";
-  services.xserver.xkbModel = "pc105";
-  services.xserver.xkbVariant = "intl";
-  services.xserver.xkbOptions = "ctrl:nocaps,lvl3:menu_switch";
-
-  # Display and window manager settings.
-
-  services.xserver.displayManager = {
-    sessionCommands = ''
-      ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "keycode 108 = Alt_R"
-      ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "add mod1 = Alt_R"
-    '';
+    windowManager = {
+      i3.enable = true;
+      default = "i3";
+    };
   };
-
-  services.xserver.windowManager = {
-    i3.enable = true;
-    default = "i3";
-  };
-
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
 
   security.sudo.wheelNeedsPassword = false;
   users.mutableUsers = false;
