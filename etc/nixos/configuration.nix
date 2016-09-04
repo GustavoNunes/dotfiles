@@ -26,17 +26,19 @@
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
 
+  nixpkgs.config.allowUnfree = true;
+
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     # System and utility packages
-    wget mkpasswd
+    wget mkpasswd python
 
     # X11 and display packages
     i3status dmenu rxvt_unicode
 
     # General use packages
-    emacs firefox chromium git
+    emacs firefox chromium git dropbox
 
     # Development packages
   ];
