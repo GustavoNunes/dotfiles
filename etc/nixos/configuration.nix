@@ -52,6 +52,14 @@
 
     # Display and window manager settings.
     displayManager = {
+      slim = {
+        enable = true;
+        theme = pkgs.fetchurl {
+          url = "https://github.com/edwtjo/nixos-black-theme/archive/v1.0.tar.gz";
+          sha256 = "13bm7k3p6k7yq47nba08bn48cfv536k4ipnwwp1q1l2ydlp85r9d";
+        };
+      };
+      
       sessionCommands = ''
         ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "keycode 108 = Alt_R"
         ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "add mod1 = Alt_R"
