@@ -157,3 +157,4 @@ bar {
 }
 
 exec feh --bg-scale ~/wallpaper.jpg
+exec dropbox
