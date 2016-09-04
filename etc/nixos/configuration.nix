@@ -26,6 +26,9 @@
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
 
+  # Networking options
+  networking.usePredictableInterfaceNames = false;
+
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search by name, run:
