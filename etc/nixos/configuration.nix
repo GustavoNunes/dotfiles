@@ -29,6 +29,9 @@
   # Networking options
   networking.usePredictableInterfaceNames = false;
 
+  # Programs and packages
+  programs.zsh.enable = true;
+  
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search by name, run:
@@ -78,12 +81,15 @@
   };
 
   security.sudo.wheelNeedsPassword = false;
-  users.mutableUsers = false;
-  users.extraUsers = {
-    gustavo = {
-      hashedPassword = "$6$X0LW9dXv.7$tNP0bo87zlvOH6vvG.i/2QSnCFUSYvONzJF0H3iwz3sco6EEGA6JX5ZzqSrhzL/G0C8iVBkDJPlrpY9JWqCbz0";
-      extraGroups = ["wheel"];
-      isNormalUser = true;
+  users = {
+    defaultUserShell = "/run/current-system/sw/bin/zsh";
+    mutableUsers = false;
+    extraUsers = {
+      gustavo = {
+        hashedPassword = "$6$X0LW9dXv.7$tNP0bo87zlvOH6vvG.i/2QSnCFUSYvONzJF0H3iwz3sco6EEGA6JX5ZzqSrhzL/G0C8iVBkDJPlrpY9JWqCbz0";
+        extraGroups = ["wheel"];
+        isNormalUser = true;
+      };
     };
   };
 
