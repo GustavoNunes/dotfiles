@@ -27,7 +27,12 @@
   time.timeZone = "America/Sao_Paulo";
 
   # Networking options
-  networking.usePredictableInterfaceNames = false;
+  networking = {
+    usePredictableInterfaceNames = false;
+    wireless.enable = false; # Leave this to Wicd
+    useDHCP = false; # Leave this to Wicd
+    wicd.enable = true;
+  };
 
   # Programs and packages
   programs.zsh.enable = true;
