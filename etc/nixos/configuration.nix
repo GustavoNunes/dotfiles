@@ -33,12 +33,9 @@
   programs.zsh.enable = true;
   
   nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search by name, run:
-  # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     # System and utility packages
-    wget mkpasswd python
+    wget mkpasswd python unzip
 
     # X11 and display packages
     i3status dmenu rxvt_unicode
