@@ -12,3 +12,7 @@ urxvt*internalBorder:0
 URxvt.transparent: true
 URxvt.shading: 10
 urxvt*fading: 15
+
+URxvt.perl-ext-common: clipboard
+URxvt.keysym.C-c: perl:clipboard:copy
+URxvt.keysym.C-v: perl:clipboard:paste

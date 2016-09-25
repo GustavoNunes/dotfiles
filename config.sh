@@ -13,3 +13,7 @@ ln -sfn $PWD/.Xresources /home/gustavo/.Xresources
 
 # Misc configuration
 ln -sfn $PWD/wallpaper.jpg /home/gustavo/wallpaper.jpg
+
+# urxvt configuration
+mkdir -p /home/gustavo/.urxvt/ext
+ln -sfn $PWD/urxvt-clipboard /home/gustavo/.urxvt/ext/clipboard

@@ -43,7 +43,7 @@
     wget mkpasswd python unzip
 
     # X11 and display packages
-    i3status dmenu rxvt_unicode
+    i3status dmenu rxvt_unicode xsel
 
     # General use packages
     emacs firefox chromium git dropbox
