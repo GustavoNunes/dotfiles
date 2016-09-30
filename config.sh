@@ -1,5 +1,7 @@
 # Emacs configuration
-ln -sfn $PWD/.emacs.d /home/gustavo/.emacs.d
+git clone https://github.com/syl20bnr/spacemacs /home/gustavo/.emacs.d
+chown -R gustavo:users /home/gustavo/.emacs.d
+ln -sfn $PWD/.spacemacs /home/gustavo/.spacemacs
 
 # NixOS configuration
 ln -sfn $PWD/etc/nixos /etc/nixos
