@@ -22,7 +22,7 @@
     consoleKeyMap = "us";
     defaultLocale = "en_US.UTF-8";
   };
-  
+
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
 
@@ -36,7 +36,7 @@
 
   # Programs and packages
   programs.zsh.enable = true;
-  
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # System and utility packages
@@ -49,6 +49,7 @@
     emacs firefox chromium git dropbox
 
     # Development packages
+    leiningen
   ];
 
   services.xserver = {
@@ -69,7 +70,7 @@
           sha256 = "13bm7k3p6k7yq47nba08bn48cfv536k4ipnwwp1q1l2ydlp85r9d";
         };
       };
-      
+
       sessionCommands = ''
         ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "keycode 108 = Alt_R"
         ${pkgs.xlibs.xmodmap}/bin/xmodmap -e "add mod1 = Alt_R"
