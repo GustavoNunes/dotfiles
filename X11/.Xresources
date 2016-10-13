@@ -16,3 +16,4 @@ urxvt*fading: 15
 URxvt.perl-ext-common: clipboard
 URxvt.keysym.C-c: perl:clipboard:copy
 URxvt.keysym.C-v: perl:clipboard:paste
+URxvt.keysym.C-g: \003
