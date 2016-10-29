@@ -46,7 +46,7 @@
     i3status dmenu rxvt_unicode xsel
 
     # General use packages
-    emacs firefox chromium git dropbox
+    emacs firefox chromium git dropbox brasero
 
     # Development packages
     leiningen
