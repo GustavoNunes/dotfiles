@@ -11,11 +11,8 @@
     ];
 
   # Use the GRUB 2 boot loader.
-  boot.loader.grub = {
-    enable = true;
-    version = 2;
-    device = "/dev/sda";
-  };
+  boot.loader.gummiboot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   # Select internationalisation properties.
   i18n = {
