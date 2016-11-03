@@ -5,7 +5,7 @@ rm /home/gustavo/.spacemacs
 ln -sfn $PWD/.spacemacs.d /home/gustavo/.spacemacs.d
 
 # NixOS configuration
-ln -sfn $PWD/nixos /etc/nixos
+ln -sfn $PWD/nixos/configuration.nix /etc/nixos/configuration.nix
 
 # i3 configuration
 ln -sfn $PWD/i3/config /home/gustavo/.config/i3/config
