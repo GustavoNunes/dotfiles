@@ -49,6 +49,8 @@
     leiningen
   ];
 
+  virtualisation.docker.enable = true;
+
   services.xserver = {
     enable = true;
 
@@ -87,7 +89,7 @@
     extraUsers = {
       gustavo = {
         hashedPassword = "$6$X0LW9dXv.7$tNP0bo87zlvOH6vvG.i/2QSnCFUSYvONzJF0H3iwz3sco6EEGA6JX5ZzqSrhzL/G0C8iVBkDJPlrpY9JWqCbz0";
-        extraGroups = ["wheel"];
+        extraGroups = ["wheel" "docker"];
         isNormalUser = true;
       };
     };
