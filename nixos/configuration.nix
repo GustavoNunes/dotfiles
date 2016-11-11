@@ -39,7 +39,15 @@
   # Programs and packages
   programs.zsh.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+
+    firefox = {
+     enableGoogleTalkPlugin = true;
+     enableAdobeFlash = true;
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     # System and utility packages
     wget mkpasswd python unzip
