@@ -14,6 +14,11 @@
   boot.loader.gummiboot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  boot.extraModprobeConfig = ''
+    options snd-hda-intel id=PCH,HDMI index=1,0
+    options snd_hda_intel enable=1
+  '';
+
   # Select internationalisation properties.
   i18n = {
     consoleKeyMap = "us";
