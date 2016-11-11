@@ -50,7 +50,7 @@
 
   environment.systemPackages = with pkgs; [
     # System and utility packages
-    wget mkpasswd python unzip
+    wget mkpasswd python unzip htop arandr
 
     # X11 and display packages
     i3status dmenu rxvt_unicode xsel
