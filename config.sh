@@ -18,6 +18,3 @@ ln -sfn $PWD/X11/.Xresources /home/gustavo/.Xresources
 # urxvt configuration
 mkdir -p /home/gustavo/.urxvt/ext
 ln -sfn $PWD/urxvt/urxvt-clipboard /home/gustavo/.urxvt/ext/clipboard
-
-# zsh configuration
-ln -sfn $PWD/zsh/.zshrc /home/gustavo/.zshrc
