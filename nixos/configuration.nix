@@ -67,6 +67,9 @@
   services.xserver = {
     enable = true;
 
+    # Touchpad settings
+    synaptics.enable = true;
+
     # Keyboard settings
     layout = "us";
     xkbModel = "pc105";
