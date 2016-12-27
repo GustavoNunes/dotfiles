@@ -57,10 +57,12 @@
     emacs firefox chromium git dropbox brasero
 
     # Development packages
+    vagrant
     leiningen
   ];
 
   virtualisation.docker.enable = true;
+  virtualisation.virtualbox.host.enable = true;
 
   services.xserver = {
     enable = true;
