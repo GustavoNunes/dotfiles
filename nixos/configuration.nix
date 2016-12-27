@@ -37,8 +37,6 @@
   };
 
   # Programs and packages
-  programs.zsh.enable = true;
-
   nixpkgs.config = {
     allowUnfree = true;
 
@@ -97,7 +95,6 @@
 
   security.sudo.wheelNeedsPassword = false;
   users = {
-    defaultUserShell = "/run/current-system/sw/bin/zsh";
     mutableUsers = false;
     extraUsers = {
       gustavo = {
