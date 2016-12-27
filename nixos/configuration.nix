@@ -77,6 +77,7 @@
     xkbOptions = "ctrl:nocaps,lvl3:menu_switch";
 
     # Display and window manager settings.
+    desktopManager.gnome3.enable = true;
     displayManager = {
       slim = {
         enable = true;
