@@ -48,7 +48,7 @@
 
   environment.systemPackages = with pkgs; [
     # System and utility packages
-    wget mkpasswd python unzip htop arandr
+    wget mkpasswd python unzip htop arandr tree
 
     # X11 and display packages
     i3status dmenu rxvt_unicode xsel
